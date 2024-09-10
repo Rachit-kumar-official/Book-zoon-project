@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+   body   
+           {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("bgimg.png");
+        background-size: cover;
+           }
+
+
+    .container {
+    max-width: 300px;
+    height: 400px;
+    margin-left: 40%;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: transparent;
+    font-weight: bold;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h2{  
+      text-align: center;
+      font-weight: bolder;
+      font-size: 25px;
+      }
+
+    .container form {
+      display: flex;
+      flex-direction: column;
+      }
+
+    .container label {
+      font-weight: bolder;
+      font-size: 16px;
+      }
+
+    .container input, .container textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+   }
+
+
+    .container .b1 {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+     }
+
+
+    .container .b1:hover {
+      background-color: #0056b3;
+    }
+
+    .b2 {
+    height: 27px;
+    width: 50px;
+    margin-left: 125px;
+    margin-top: 20px;
+    background-color: red;
+}
+
+    .b2 a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+    }
+
+
+    /* Responsiveness in css */
+
+
+    @media screen and (max-width:667px) {
+    
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("bgimg.png");
+        background-size: cover;
+      }
+
+      .container {
+        max-width: 269px;
+        height: 336px;
+        margin-top: 105px;
+        margin-left: 23px;
+        padding: 49px;
+        background-color: transparent;
+        font-weight: bold;
+        color: #ccc;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .container input , .container textarea {
+    padding: 5px;
+    margin-bottom: 11px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    }
+
+    .container label {
+    font-weight: bolder;
+    font-size: 14px;
+    }
+      
+
+.container .b1 {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 12px;
+        padding-bottom: 35px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        height: 0px;
+        width: 99px;
+        font-size: 19px;
+        text-align: center;
+        margin-left: 55px;
+        border-radius: 10%;
+
+      }
+
+        .b2 {
+         height: 36px;
+        width: 74px;
+        margin-left: 66px;
+        margin-top: 16px;
+        background-color: #7534eb;
+        border-radius: 30%;
+        font-size: 20px;
+          }     
+    }
+    
+
+
+  </style>
+</head> 
+<body>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message"></textarea>
+
+      <button type="submit" class="b1">Submit</button>
+
+      <button type="submit" class="b2" ><a href="index.html">Back</a></button>
+    </form>
+  </div>
+</body>
+</html>

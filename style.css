@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    background-color: black;    
+}
+
+
+.tops{
+width: 100wv;
+height: 15vh;
+background-color:#2874F0;
+display: flex;
+align-items: center;
+font-size: 3.5rem;
+color: white;
+justify-content: space-evenly;
+}
+
+#navbar_01{
+    display: flex;
+    position: sticky; 
+    top: 15vh;
+    left: 0%;
+    right: 0%; 
+    align-items: center;
+    justify-content:space-around;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    height: 5vh;
+    text-decoration: none;
+    border-bottom: 2px solid wheat;
+    font-weight: 700;
+}
+
+
+#navbar_01 a:hover{
+    color: rgb(8, 7, 7);
+    }
+
+ #navbar_01 a{
+    text-decoration: none;
+    color: white;
+ }
+
+ .logo-01{
+    width: 150px;
+    width: 150px;
+ }
+
+.navbar_01 a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar_01 a:hover{
+   font-size: 1.2rem;
+   color: black;
+}
+
+.navbar_01 i{
+    display: none;
+}
+
+body{
+    background-color: black;
+    color:white;
+}
+.content_01::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    opacity: 0.3;
+    background-image: url("01-background.jpg");
+    background-size: cover;
+}
+
+.content_01{
+    height: 70vh;
+    width: 105vh;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.content_01 h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.content_01 span{
+    color: rgb(236, 113, 79);
+    font-weight: bold;
+}
+
+.content_01 p{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#serch input{
+    height: 5vh;
+    width: 30vw;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+    outline-color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+
+#serch button{
+    color: black;
+    font-size: 1.8rem;
+    background-color: #fff;
+    padding-bottom: 3px;
+    cursor: pointer;
+    border-color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 1px 2px 3px 2px;
+}
+
+#serch button:hover{
+    background-color: rgb(188, 188, 211);
+    color: white;
+}
+
+
+.mstdiv{
+   padding-top: 20px ;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+
+}
+
+.mstdiv div{
+    height: 300px;
+    width: 250px;
+    border-radius: 5px;
+    background-color:#fff;
+    color: black;
+    font-size: 2rem;
+}
+
+.mstdiv div img{
+    height: 250px;
+    width: 250px;
+}
+
+.cont_01{
+    height: 450px;
+    width: 400px;
+    border: 2px solid black;
+
+}
+
+.cont_02{
+    height: 450px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+.cont_03{
+    height: 450px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+.cont_04{
+    height: 450px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+.fot{
+    height: 50vh;
+    width: 100vw;
+    background-color:#4F0000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+marquee{
+    height: 50px;
+    width: 100vw;
+    color: blue;
+    font-size: 2rem;
+    background-color: rgb(121, 92, 150);
+    text-decoration: none;
+    
+}
+
+ 
+/* TOPS RESPONSIVE */
+
+@media screen and (max-width:1300px) {
+
+    .tops{
+        font-size: 2rem;
+        background-color: rgb(10, 107, 107);
+    }
+    #navbar_01{
+        font-size: 1rem ;
+       
+    }
+
+    .mstdiv{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5%;
+        margin-top: 5vh;
+    }
+
+    .content_01 h2{
+         text-align: center;
+         text-wrap: nowrap;
+        
+    }
+
+    .fot{
+        height: 16vh;
+    }
+    
+    
+}
+
+@media screen and (max-width:500px){
+    .navbar_01 a{
+        font-size: 18px;
+    }
+    
+    .tops{
+        font-size: 1.1rem;
+    }
+
+    .content_01 h2{
+        
+        font-size: 1.2rem;
+        width: 35vh;
+    }
+
+    .content_01{
+        height: 43vh;
+        width: 39vh;
+    }
+
+    .fot {
+        height: 55vh;
+        width: 330px;
+    }
+    
+    marquee {
+        height: 32px;
+        width: 95vw;
+    }
+    .logo-01 {
+        width: 120px;
+    }
+    #serch input {
+        height: 4vh;
+        width: 50vw;
+        font-size: 1.3rem;
+    }
+    #serch button {
+       
+        font-size: 1.5rem;
+            }
+            .content_01 p {
+                font-size:1.1rem;
+            }
+}
